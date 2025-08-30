@@ -13,8 +13,7 @@ Project_name= unit3-lesson3-lab2
 all: $(Project_name).bin 
 	@echo "---------------Build is done---------------"
 	
-startup.o: startup.s
-	$(CC)as.exe  $(CFLAGS) $< -o $@
+
 	
 %.o: %.c
 	$(CC)gcc.exe -c $(CFLAGS) $(INCS)  $< -o $@
